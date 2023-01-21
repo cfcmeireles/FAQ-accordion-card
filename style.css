@@ -1,0 +1,372 @@
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 12px;
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center;
+  margin-top: 10px;
+  right: 0;
+  left: 0;
+  position: relative;
+  color: h hsl(353, 100%, 0%);
+}
+
+.attribution a { 
+  color: hsl(353, 100%, 99%);
+}
+
+#faq-card {
+   display: flex;
+   height: 100vh;
+   justify-content: center;
+   align-items: center;
+}
+
+.card-body {
+  min-height: 400px;
+}
+
+#faq {
+  border-radius: 20px;
+  padding: 70px;
+  min-height: 400px;
+  min-width: 800px;
+  overflow: hidden;
+  position: relative;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background: white;
+  z-index: 0;
+}
+
+h1 {
+  padding-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  padding-top: 10px;
+  font-weight: 400;
+}
+
+.answers {
+  display: block;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.5s ease;
+  padding-right: 22px;
+}
+
+.answers.active {
+  display: block;
+  max-height: 55px;
+  opacity: 1;
+  padding-bottom: 10px;
+}
+
+.pattern {
+  position: absolute;
+  right: 500px;
+  top: -295px;
+  bottom: 0px;
+  z-index: 1;
+}
+
+.illustration {
+  position: absolute;
+  right: 550px;
+  z-index: 2;
+}
+
+.boxdiv {
+  z-index: 3;
+  position: absolute;
+}
+
+.box {
+  position: absolute;
+  top: 200px;
+  left: -90px;
+}
+
+.questions {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.questions.active {
+  font-weight: 700;
+}
+
+hr {
+  height: 1px;
+  background-color: hsl(240, 5%, 91%);
+  border: none;
+}
+
+.images-mobile {
+  display: none;
+}
+
+@media only screen and (min-width: 150px) and (max-width: 370px) {
+  h1 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  #faq-card {
+    height: 160vh;
+  }
+
+  #faq {
+    border-radius: 20px;
+    padding: 40px 20px 40px 0;
+    min-height: 60px;
+    min-width: 120px;
+    overflow: visible;
+    position: relative;
+    display: block;
+    background: white;
+    z-index: 0;
+    margin: -200px 15px 50px 15px;
+  }
+
+  ul {
+    margin-left: -10px;
+    margin-right: 10px;
+  }
+
+  .images {
+    display: none;
+  }
+
+  .boxdiv {
+    display: none;
+  }
+
+  .images-mobile {
+   display: block;
+   position: relative;
+   text-align: center;
+   bottom: 140px;
+   margin-bottom: -200px;
+  }
+
+  .pattern-mobile {
+    position: relative; 
+    bottom: 70px;
+    z-index: 1;
+    left: 10px;
+  }
+
+  .illustration-mobile {
+   position: relative; 
+   z-index: 2;
+   width: 90%;
+   left: 10px;
+  }
+
+  .answers {
+    padding-right: 40px;
+  }
+
+  .answers.active {
+    max-height: 100px;
+  } 
+
+  .attribution { 
+    bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 371px) and (max-width: 540px) {
+  h1 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  #faq-card {
+    height: 135vh;
+  }
+
+  #faq {
+    border-radius: 20px;
+    padding: 40px 20px 40px 0;
+    min-height: 60px;
+    min-width: 120px;
+    overflow: visible;
+    position: relative;
+    display: block;
+    background: white;
+    z-index: 0;
+    margin: 0px 15px 125px 15px;
+  }
+
+  ul {
+    margin-left: -10px;
+    margin-right: 10px;
+  }
+
+  .images {
+    display: none;
+  }
+
+  .boxdiv {
+    display: none;
+  }
+
+  .images-mobile {
+   display: block;
+   position: relative;
+   text-align: center;
+   bottom: 155px;
+   margin-bottom: -220px;
+  }
+
+  .pattern-mobile {
+    position: relative; 
+    text-align: center;
+    bottom: 80px;
+    z-index: 1;
+  }
+
+  .illustration-mobile {
+   position: relative; 
+   z-index: 2;
+   width: 80%;
+  }
+
+  .answers {
+    padding-right: 40px;
+  }
+
+  .attribution {  
+    bottom: 120px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 770px) {
+  #faq {
+    min-width: 0;
+     margin: 0px 15px 100px 15px;
+  }
+
+  .pattern {
+    position: absolute;
+    right: 340px;
+    top: -295px;
+    bottom: 0px;
+    z-index: 1;
+  }
+  
+  .illustration {
+    position: absolute;
+    right: 340px;
+    z-index: 2;
+  }
+  
+  .box {
+    position: absolute;
+    top: 200px;
+    left: -70px;
+  }
+
+  .attribution {  
+    bottom: 90px;
+  }
+}
+
+@media only screen and (min-width: 820px) and (max-width: 830px) {
+  #faq {
+    min-width: 0;
+     margin: 0px 15px 300px 15px;
+     display: grid;
+     grid-template-columns: 55% 45%;
+  }
+
+  .pattern {
+    position: absolute;
+    right: 340px;
+    top: -295px;
+    bottom: 0px;
+    z-index: 1;
+  }
+  
+  .illustration {
+    position: absolute;
+    right: 340px;
+    z-index: 2;
+  }
+  
+  .box {
+    position: absolute;
+    top: 200px;
+    left: -50px;
+  }
+
+  .attribution {  
+    bottom: 290px;
+  }
+}
+
+@media only screen and (min-width: 912px) and (max-width: 920px) {
+  #faq {
+     min-width: 0;
+     margin: 0px 15px 500px 15px;
+  }
+
+  .pattern {
+    position: absolute;
+    right: 440px;
+    top: -295px;
+    bottom: 0px;
+    z-index: 1;
+  }
+  
+  .illustration {
+    position: absolute;
+    right: 440px;
+    z-index: 2;
+  }
+  
+  .box {
+    position: absolute;
+    top: 200px;
+    left: -50px;
+  }
+
+  .attribution {  
+    bottom: 490px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1025px) {
+  #faq-card {
+    height: 120vh;
+  }
+
+  #faq {
+    margin: -120px 15px 0px 15px;
+  }
+
+  .box {
+    position: absolute;
+    top: 80px;
+    left: -80px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .questions:hover {
+    color: hsl(14, 88%, 65%);
+    cursor:pointer;
+  }
+  }
