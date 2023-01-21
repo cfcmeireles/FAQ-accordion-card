@@ -44,6 +44,7 @@ body {
 
 h1 {
   padding-bottom: 10px;
+  padding-left: 40px;
 }
 
 ul {
@@ -120,6 +121,7 @@ hr {
   h1 {
     text-align: center;
     font-size: 30px;
+    padding-left: 20px;
   }
 
   #faq-card {
@@ -191,6 +193,7 @@ hr {
   h1 {
     text-align: center;
     font-size: 30px;
+    padding-left: 20px;
   }
 
   #faq-card {
